@@ -9,6 +9,9 @@ Install intructions (Debian / Ubuntu)
 
     sudo apt-get install build-essential libusb-0.1.4 libusb-0.1.4-dev
 
+	ubuntu 12.04
+	sudo apt-get install build-essential libusb-0.1-4 libusb-dev 
+
 2. Compile:
 
     make
@@ -37,7 +40,7 @@ To allow non-root users access
 
 4. Reload the udev rules 
 
-    udevcontrol reload_rules
+    sudo udevadm control --reload-rules
 
 5. Unplug and replug the TEMPer device
 
