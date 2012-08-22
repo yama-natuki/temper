@@ -41,7 +41,7 @@ int main(){
 		struct tm *utc;
 		time_t t;
 		t = time(NULL);
-		utc = gmtime(&t);
+		utc = localtime(&t);
 		
 		char dt[80];
 		strftime(dt, 80, "%d-%b-%Y %H:%M", utc);
